@@ -10,7 +10,7 @@ class SetupCoupons < ActiveRecord::Migration
       t.integer :amount, null: false, default: 0
       t.string :type, null: false
       t.timestamps null: false
-      t.text :attachments, null: false, default: '{}'
+      t.text :attachments
     end
 
     create_table :coupon_redemptions do |t|
