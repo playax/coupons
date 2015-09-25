@@ -11,7 +11,7 @@ class Coupons::CouponsController < Coupons::ApplicationController
   end
 
   def index
-    @coupons = Coupon.paginate(page: params[:page], size: 50)
+    @coupons = Coupon.all.page(params[:page]).per(50)
   end
 
   def new
