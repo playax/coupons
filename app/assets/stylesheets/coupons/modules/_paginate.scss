@@ -15,21 +15,21 @@
 }
 
 .paginate li.disabled > span {
-  @extend .button.gray;
+//  @extend .button.gray;
   cursor: default;
 }
 
 .paginate li.disabled > span,
 .paginate a {
-  @extend .button;
-  @extend .button.rounded;
+//  @extend .button;
+//  @extend .button.rounded;
   display: inline-block;
   font-weight: bold;
   padding: 10px 25px;
 }
 
 .paginate a {
-  @extend .button.blue;
+//  @extend .button.blue;
 }
 
 .paginate .page {
