@@ -18,7 +18,7 @@ module Coupons
       has_many :redemptions, class_name: 'Coupons::Models::CouponRedemption'
 
       validates_presence_of :code, :valid_from
-      validates_inclusion_of :type, in: %w[percentage amount]
+      validates_inclusion_of :type, in: %w[percentage amount hour hours day days month months year years]
 
       serialize :attachments, GlobalidSerializer
 
