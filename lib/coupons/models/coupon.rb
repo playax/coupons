@@ -21,6 +21,7 @@ module Coupons
       validates_inclusion_of :type, in: %w[percentage amount hour hours day days month months year years]
 
       serialize :attachments, GlobalidSerializer
+      serialize :extra_attributes, JSON
 
       validates_numericality_of :amount,
         greater_than_or_equal_to: 0,
